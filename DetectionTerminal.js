@@ -39,5 +39,5 @@ if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
     //alert(navigator.userAgent); 
     window.location.href ="./Android/index.html";
 } else {
-    window.location.href ="./index/.html";
+    //window.location.href ="./index/index.html";
 };
