@@ -1,5 +1,5 @@
-git remote add origin git@oringes.cn:/home/git/oringes.cn
+git remote add origin git@github.com:Oringes9235/oringes.cn.git
 
-git push -u origin origin/master
+git push -u origin master
 
 pause
