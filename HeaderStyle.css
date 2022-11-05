@@ -3,7 +3,7 @@ body {
     color: #000;
     font-size: 14px;
     text-align: left;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-family: "Jatbrain Mono",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     background-color: #fff;
     width: 100%;
     height: 100%;
@@ -14,6 +14,8 @@ body {
     left: 0;
     right: 0;
     vertical-align: top;
+    min-width: 100%;
+    min-height: 100%;
 }
 li a {
     list-style: none;
@@ -26,6 +28,7 @@ li a {
     background-color: #fff;
     text-align: center;
     color: #000;
+    min-width: 420px;
 }
 .oringes-header-floor-mini {
     display: inline-block;
@@ -33,6 +36,7 @@ li a {
     height: 54px;
     margin: auto;
     justify-content: space-between;
+    min-width: 908px;
 }
 .header-mini-left {
     display: inline-block;
@@ -41,6 +45,7 @@ li a {
     margin: 0;
     padding: 0;
     text-align: left;
+    float: left;
 }
 .header-left-small-box {
     display: inline-block;
@@ -82,9 +87,10 @@ li a {
     display: inline-block;
     width: auto;
     height: 54px;
-    margin: 0 0 0 59%;
+    margin: 0;
     padding: 0;
     text-align: right;
+    float: right;
 }
 .header-right-small-box {
     display: inline-block;
@@ -94,6 +100,29 @@ li a {
     text-align: center;
     padding: 0;
     vertical-align: top;
+}
+.header-right-jump-link {
+    display: inline-block;
+    width: auto;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 52px;
+    font-size: 14px;
+    color: #000;
+}
+.audio-mus-box {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 54px;
+    width: auto;
+    vertical-align: top;
+}
+.audio-mus-box:hover {
+    color: #000;
 }
 .mini-search-box {
     display: inline-block;

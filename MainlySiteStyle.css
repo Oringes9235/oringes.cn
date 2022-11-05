@@ -1,0 +1,130 @@
+.mainly-massages-floor {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.floating-box-background {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background: #a7a7a7;
+    min-width: 908px;
+}
+.floating-box {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    margin-left: 17%;
+    background-color: #656565;
+    max-width: 300px;
+    min-height: 300px;
+}
+.texts-in-floating-box {
+    display: inline-block;
+    margin: 31px 0 0 31px;
+    padding: 0;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-size: 50px;
+    line-height: 79px;
+    vertical-align: top;
+    border: 0;
+    color: #fff;
+}
+.oringes-home-page-content-box {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    min-width: 908px;
+}
+.piece-of-content {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+.piece-of-content-title-box {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.piece-of-content-title {
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+.title-lefe-and-right-strip {
+    display: inline-block;
+    margin: -1px 23px 0 0;
+    padding: 0;
+    width: 4px;
+    height: 70%;
+    background-color: #c4c4c4;
+    vertical-align: middle;
+}
+.piece-of-content-for-body {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 55%;
+    height: auto;
+    vertical-align: top;
+    color: #000;
+}
+.piece-of-content-for-texts-of-body {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 27px;
+}
+.piece-of-content-for-texts-of-body a {
+    color: #47a6ff;
+    text-decoration: none;
+}
+.piece-of-content-for-texts-of-body a:hover {
+    text-decoration: underline;
+}
+.toweek-contry-instracation {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin: 0;
+    margin-right: 5%;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+    float: right;
+    color: #fff;
+    background-color: #c2c2c2;
+    vertical-align: middle;
+}
+
+
+
+
+
