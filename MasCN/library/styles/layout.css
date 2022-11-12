@@ -2,9 +2,11 @@
 @import url("font-awesome.min.css");
 @import url("framework.css");
 
-/* Backgrounds & imgs*/
+/* Background imgs & markdown layout*/
 .group_pho img:hover{transform: scale(1.05); box-shadow: 4px 4px 15px rgba(20, 46, 45, 0.2);}
 .group_bgc:hover{-webkit-transform: background-size .3s linear;}
+
+.license{margin: 0; padding: 0; margin-bottom: 10px;}
 
 /* text colour*/
 .text_transcolour:hover{color: #417e00;}
