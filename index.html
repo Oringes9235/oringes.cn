@@ -1,199 +1,314 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="HeaderStyle.css">
-        <link rel="stylesheet" href="MainlySiteStyle.css">
-        <link rel="stylesheet" href="FooterStyle.css">
-        <link rel="shortcut icon" href="./imgages/oringes.cn-icon.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="./library/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" href="./imgs/icon/oringes.cn-icon.svg">
         <title>oringes.cn | Home</title>
     </head>
-    <body>
-        <!--检测访问客户端-->
-        <script src="./DetectionTerminal.js"></script>
+    <body id="top">
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear"> 
+                <div id="logo" class="fl_left">
+                    <h1><a href="index.html">Oringes.cn</a></h1>
+                </div>
+                <nav id="mainav" class="fl_right">
+                    <ul class="clear">
+                        <li class="active">
+                            <a href="index.html" set-lan="html:home">Home</a>
+                        </li>
+                        <li>
+                            <a class="drop" href="#" set-lan="html:mascn">MasCN</a>
+                            <ul>
+                                <li><a href="./MasCN/pages/MasCN-home.html">MasCN</a></li>
+                                <li><a href="./MasCN/pages/MasCN-docs.html">Docs</a></li>
+                                <li><a href="./MasCN/pages/MasCN-source-codes.html">Source Codes</a></li>
+                                <li><a href="./MasCN/pages/MasCN-version-instraction.html">Version Instraction</a></li>
+                                <li><a href="./MasCN/pages/MasCN-develop.html">Develop</a></li>
+                            </ul>
+                        </li>
+                        <!--------------------------------------------------------------->
+                        <li>
+                            <a class="drop" href="#">Projects</a>
+                            <ul>
+                                <li><a href="./MasCN/MasLang/pages/MasLang-home.html">MasLang</a></li>
+                                <li>
+                                    <a class="drop" href="#">WordsGo</a>
+                                    <ul>
+                                        <li><a href="./WordsGo/pages/WordsGo-home.html">WordsGo</a></li>
+                                        <li><a href="./WordsGo/pages/WordsGo-docs.html">Docs</a></li>
+                                        <li><a href="./WordsGo/pages/WordsGo-source-codes.html">Source Codes</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./MasCN/MasWeb/pages/MasWeb-home.html">MasWeb</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="drop" href="#">Sources</a>
+                            <ul>
+                                <li><a href="./Sources/Musics/Musics-home.html">Musics</a></li>
+                                <li><a href="./Sources/Movies/Movies-home.html">Movies</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./Special/pages/Special-home.html">Special</a></li>
+                    </ul>
+                    <!--mobile phone-->
+                    <form action="#">
+                        <select name="" id="">
+                            <option selected="selected" value="">Menu</option>
+                            <option value="./index.html">Home</option>
 
-        <!--导航栏-->
-        <div class="oringes-header-floor">
-            <div class="oringes-header-floor-mini">
-                <div class="header-mini-left">
-                    <li class="header-left-small-box">
-                        <a href="https://oringes.cn" class="header-left-jump-link-active">
-                            <svg width="192" height="54" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <title _mstHash="102401">oringes.cn | Home</title>
-                                    <text fill="#000000" stroke-width="0" x="55.0443" y="35.23906" id="svg_1" font-size="24" font-family="'JetBrains Mono'" text-anchor="start" xml:space="preserve" stroke="#000" transform="matrix(0.864394 0 0 1.05294 1.52052 -1.53151)">oringes.cn</text>
-                                    <path fill="#000000" stroke="#000" stroke-width="0" d="m17.27373,43.07378l0,-27.40579l27.40578,27.40579l-27.40578,0z" id="svg_8"/>
-                                    <path fill="#666666" stroke="#000" stroke-width="0" d="m27.66354,30.76573l0,-17.78238l17.78238,17.78238l-17.78238,0z" id="svg_10" transform="rotate(-135 36.5547 21.8746)"/>
-                                </g>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="header-left-small-box"><a href="#" class="header-left-jump-link">MasCN</a><title>MasCN</title></li>
-                    <li class="header-left-small-box"><a href="#" class="header-left-jump-link">Projects</a><title>Projects</title></li>
-                    <li class="header-left-small-box"><a href="#" class="header-left-jump-link">Blog</a><title>Blog</title></li>
-                    <li class="header-left-small-box"><a href="#" class="header-left-jump-link">Special</a><title>Special</title></li>
-                    <!--
-                        <li class="header-left-small-box"><a href="#" class="header-left-jump-link"></a></li>
-                    -->
-                </div>
-                <div class="header-mini-right">
-                    <li class="header-right-small-box">
-                        <div class="audio-mus-box">
-                            <audio src="./mus/Ashes Remain、Josh Smith - Greater Things.flac" controls="controls"></audio>
-                        </div>
-                    </li>
-                    <li class="header-right-small-box">
-                        <div class="trans-languages-box"><a href="./zh-cn.html" class="trans-languages">中文</a></div>
-                    </li>
-                </div>
+                            <option value="./MasCN/pages/MasCN-home.html">MasCN</option>
+                            <option value="./MasCN/pages/MasCN-docs.html">- - Docs</option>
+                            <option value="./MasCN/pages/MasCN-source-codes.html">- - Source Codes</option>
+                            <option value="./MasCN/pages/MasCN-version-instraction.html">- - Version Instraction</option>
+                            <option value="./MasCN/pages/MasCN-develop.html">- - Develop</option>
+
+                            <option value="./MasCN/MasLang/pages/MasLang-home.html">MasLang</option>
+                            <option value="./WordsGo/pages/WordsGo-home.html">WordsGo</option>
+                            <option value="./WordsGo/pages/WordsGo-docs.html">- - Docs</option>
+                            <option value="./WordsGo/pages/WordsGo-source-codes.html">- - Source Codes</option>
+                            <option value="./MasCN/MasWeb/pages/MasWeb-home.html">MasWeb</option>
+
+                            <option value="./Sources/Musics/Musics-home.html">Musics</option>
+                            <option value="./Sources/Movies/Movies-home.html">Movies</option>
+
+                            <option value="./Special/pages/Special-home.html">Special</option>
+                        </select>
+                    </form>
+                </nav>
+            </header>
+        </div>
+
+        <!-- ################################################################################################ -->
+        <div class="wrapper bgded overlay" style="background-image:url('./imgs/backgrounds/background.jpg');">
+            <div id="pageintro" class="hoc clear"> 
+                <article>
+                    <h2 class="heading">We believe that the world is a good place.</h2>
+                    <p>Life is a fantastsic guys. Follow in his footsteps and you will find your freedom!</p>
+                    <footer><a class="btn" href="#">Traveling now</a></footer>
+                </article>
             </div>
         </div>
 
-        <!--色彩块-->
-        <div class="mainly-massages-floor">
-            <div class="floating-box-background">
-                <div class="floating-box">
-                    <p class="texts-in-floating-box">Hi, It's oringes.cn !</p>
+        <!-- ################################################################################################ -->
+        <div class="wrapper row3">
+            <main class="hoc container clear"> 
+                <!-- main body -->
+                <!-- ################################################################################################ -->
+                <div class="group">
+                    <article class="one_third first">
+                        <h6 class="heading font-x2">Every Sections</h6>
+                        <p>Even though our home page is only a few lines of information, we still have many distributed pages</p>
+                        <p class="btmspace-30"></p>
+                        <footer><a class="btn" href="#">Read More &raquo;</a></footer>
+                    </article>
+                    <div class="two_third">
+                        <ul class="nospace group elements">
+                            <li class="one_half first">
+                                <article>
+                                    <a href="#"><i class="fa fa-book"></i></a>
+                                    <h6 class="heading">Our Decisions</h6>
+                                    <p>Publicizing our decisions on various projects, and  publish the project page for the project &hellip;</p>
+                                    <footer><a href="#" class="text_transcolour">View Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="one_half">
+                                <article>
+                                    <a href="#"><i class="fa fa-road"></i></a>
+                                    <h6 class="heading">Technology Involved</h6>
+                                    <p>Here, you can learn the techniques involved in all the projects we develop &hellip;</p>
+                                    <footer><a href="#" class="text_transcolour">View Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="one_half first">
+                                <article>
+                                    <a href="#"><i class="fa fa-eye"></i></a>
+                                    <h6 class="heading">Secretly Discussion</h6>
+                                    <p>There are a lot of development secrets out there, such as a partial source code consultation &hellip;</p>
+                                    <footer><a href="#" class="text_transcolour">View Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                            <li class="one_half">
+                                <article>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                    <h6 class="heading">Keep Codes</h6>
+                                    <p>We not only provide code presentation, but also support a portion of the code download &hellip;</p>
+                                    <footer><a href="#" class="text_transcolour">View Details &raquo;</a></footer>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="toweek-contry-instracation">
-                    <p class="contry-title">This week introduces countries.</p>
-                    <img src="./imgages/USA.png" alt="#" width="200px">
-                    <p class="contry-messages-name">The United States of America</p>
-                </div>
-            </div>
+                <!-- ################################################################################################ -->
+                <!-- // main body -->
+                <div class="clear"></div>
+            </main>
         </div>
-
-        <!--oringes.cn页面内容-->
-        <div class="oringes-home-page-content-box">
-            <ul class="piece-of-content">
-                <div class="piece-of-content-title-box">
-                    <p class="piece-of-content-title"><span class="title-lefe-and-right-strip"></span>Oringes.cn's site page</p>
+        <!-- ################################################################################################ -->
+        <div class="wrapper row2">
+            <section class="hoc container clear"> 
+                <div class="sectiontitle">
+                    <h6 class="heading">Our Interests</h6>
+                    <p>Keep your love & pursue it.</p>
                 </div>
-                <div class="piece-of-content-for-body">
-                    <p class="piece-of-content-for-texts-of-body">
-                        The web page and server of oringes.cn are maintained by individual, and all parts of the web page are developed by the maintainer (xue).
-                        <!--oringes.cn的网页及服务器由个人维护，网页的各个部分都由维护人（xue）开发。-->
-                    </p>
-                    <p class="piece-of-content-for-texts-of-body">
-                        The oringes.cn web page will be used for code publishing and presentation, public projects, blogging, etc.
-                        <!--oringes.cn网页将用于，代码发布及展示，公开项目，博客，等。-->
-                    </p>
-                    <p class="piece-of-content-for-texts-of-body">
-                        First of all, thank you to everyone who comes to oringes.cn page. Hopefully, you can solve some key problems here. In fact, oringes.cn is a separate multi-functional web page on the github.io on 2022.11.01. If you would like to learn about or visit the pages on the original githu.io, please visit the <a href="https://oringes9235.github.io/MasCN">github.io</a>.
-                        <!--首先，要感谢每一个来到oringes.cn网页的“你”。希望在这里你能解决某一些关键的问题。实际上，oringes.cn是一个于2022.11.01在github.io上独立的多功能网页。如果你想了解或参观原githu.io上的页面，请访问github.io。-->
-                    </p>
-                    <p class="piece-of-content-for-texts-of-body">
-                        Then, at the beginning of certain special holidays, the style and content of the oringes.cn web page will change depending on the content of the day or period.
-                        <!--然后，在某些特殊的节日开始时，oringes.cn的网页风格和内容会随这一天或这一时期里的内容的变化而变化。-->
-                    </p>
-                    <p class="piece-of-content-for-texts-of-body">
-                        Why develop oringes.cn web pages and separate them from the github.io? This is to better adapt to various clients. Also for more creativity and freedom.
-                        <!--为什么要开发oringes.cn的网页和在github.io中独立出来呢？这是为了更好的适配各种的客户端。也为了有更多的创造性和自由。-->
-                    </p>
-                    <p class="piece-of-content-for-texts-of-body">
-                        Finally, more people are welcome to participate in the oringes.cn projects, such as: MasCN, Sipolia, etc. If you have good suggestions for oringes.cn pages, the best way to do this is to email <a>x92352314@163.com</a>.
-                        <!--最后，欢迎更多的人参加oringes.cn中的项目，如：MasCN，Sipolia，等。如果你对oringes.cn的网页有好的建议，最好方法是向x92352314@163.com发邮件。-->
-                    </p>
-                </div>
-            </ul>
-            <ul class="piece-of-content">
-                <div class="piece-of-content-title-box">
-                    <p class="piece-of-content-title"><span class="title-lefe-and-right-strip"></span>Our sign</p>
-                </div>
-                <div class="piece-of-content-for-body">
-                    <p class="piece-of-content-for-texts-of-body">
-                        <svg width="192" height="54" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <title _mstHash="102401">oringes.cn</title>
-                                <text fill="#000000" stroke-width="0" x="55.0443" y="35.23906" id="svg_1" font-size="24" font-family="'JetBrains Mono'" text-anchor="start" xml:space="preserve" stroke="#000" transform="matrix(0.864394 0 0 1.05294 1.52052 -1.53151)">oringes.cn</text>
-                                <path fill="#000000" stroke="#000" stroke-width="0" d="m17.27373,43.07378l0,-27.40579l27.40578,27.40579l-27.40578,0z" id="svg_8"/>
-                                <path fill="#666666" stroke="#000" stroke-width="0" d="m27.66354,30.76573l0,-17.78238l17.78238,17.78238l-17.78238,0z" id="svg_10" transform="rotate(-135 36.5547 21.8746)"/>
-                            </g>
-                        </svg>
-                    </p>
-                    <p class="piece-of-content-for-texts-of-body">
-                        On the far left of the logo, the small triangle is above the large triangle, and the direction and color are different from the large triangle, which symbolizes that the oringes.cn is independent of the github.io and has been reborn from the original web page.
-                        <!--在标志中的最左边，小三角在大三角的上面，并且方向和色彩不同于大三角，这象征着：oringes.cn独立于github.io和有比原来的网页的脱胎换骨。-->
-                    </p>
-                </div>
-            </ul>
-            <ul class="piece-of-content">
-                <div class="piece-of-content-title-box">
-                    <p class="piece-of-content-title"><span class="title-lefe-and-right-strip"></span>Maintain oringes.cn</p>
-                </div>
-                <div class="piece-of-content-for-body">
-                    <p class="piece-of-content-for-texts-of-body">
-                        So, who do you think is maintaining oringes.cn? How many people are trying?
-                        <!--那么，你觉得有谁在维护oringes.cn？有多少人在努力？-->
-                    </p>
-                    <p class="piece-of-content-for-texts-of-body">
-                        At present, oringes.cn web pages and servers are only maintained and developed by three person, and the speed of updating web pages is really very slow.
-                        <!--目前，oringes.cn的网页和服务器只有一个人在维护和开发，更新网页的速度是真的非常的慢。-->
-                    </p>
-                    <p class="piece-of-content-for-texts-of-body">List of developers: {</p>
-                    <p class="piece-of-content-for-texts-of-body">&nbsp;&nbsp;&nbsp;&nbsp;Xue FengPeng -- dev code: 001 [countr/PRC]</p>
-                    <p class="piece-of-content-for-texts-of-body">&nbsp;&nbsp;&nbsp;&nbsp;Bill Steven -- dev code: 002 [countr/CAN]</p>
-                    <p class="piece-of-content-for-texts-of-body">&nbsp;&nbsp;&nbsp;&nbsp;Alexander MÜller-- dev code: 003 [countr/GER]</p>
-                    <p class="piece-of-content-for-texts-of-body">}</p>
-                    <p class="piece-of-content-for-texts-of-body">More messages about developers: <a href="#">Link</a></p>
-                </div>
-            </ul>
-            <!--
-                <ul class="piece-of-content">
-                    <div class="piece-of-content-title-box">
-                        <p class="piece-of-content-title"><span class="title-lefe-and-right-strip"></span>...</p>
-                    </div>
-                    <div class="piece-of-content-for-body">
-                        <p class="piece-of-content-for-texts-of-body">
-                            ...
-                        </p>
-                        <p class="piece-of-content-for-texts-of-body">
-                            ...
-                        </p>
-                    </div>
+                <ul class="nospace group services">
+                    <li class="one_third first">
+                        <article class="infobox">
+                            <h6 class="heading"><i class="fa fa-code"></i><a href="#">Writing Code</a></h6>
+                            <p>Using code to realize our ideas on the computer, it is magical & interesting &hellip;</p>
+                        </article>
+                    </li>
+                    <li class="one_third">
+                        <article class="infobox">
+                            <h6 class="heading"><i class="fa fa-steam"></i><a href="#">Games</a></h6>
+                            <p>It can not only train reaction ability, but also enrich the spiritual world &hellip;</p>
+                        </article>
+                    </li>
+                    <li class="one_third">
+                        <article class="infobox">
+                            <h6 class="heading"><i class="fa fa-server"></i><a href="#">Servers</a></h6>
+                            <p>Use the server to share and connect to each client, and you can also build a game server &hellip;</p>
+                        </article>
+                    </li>
+                    <li class="one_third first">
+                        <article class="infobox">
+                            <h6 class="heading"><i class="fa fa-paperclip"></i><a href="#">Share</a></h6>
+                            <p>Express your love for the world, to our hearts to look for expectations of the world &hellip;</p>
+                        </article>
+                    </li>
+                    <li class="one_third">
+                        <article class="infobox">
+                            <h6 class="heading"><i class="fa fa-moon-o"></i><a href="#">Action</a></h6>
+                            <p>Always be active at night, like to be in dark places, enjoy the feeling of the unknown &hellip;</p>
+                        </article>
+                    </li>
+                    <li class="one_third">
+                        <article class="infobox">
+                            <h6 class="heading"><i class="fa fa-percent"></i><a href="#">Research</a></h6>
+                            <p>Study logical operations in computers & use kind of thinking to solve problems in life &hellip;</p>
+                        </article>
+                    </li>
                 </ul>
-            -->
+                <!-- ################################################################################################ -->
+                <div class="clear"></div>
+            </section>
         </div>
-        <div class="oringes-site-page-footer-floor">
-            <div class="site-page-footer-small">
-                <div class="footer-message-top">
-                    <div class="footer-sponsorship-box">
-                        ...
-                        <!--页脚信息-->
+        
+        <!-- ################################################################################################ -->
+        <div class="wrapper row2">
+            <section class="hoc container clear"> 
+            <div class="sectiontitle">
+                <h6 class="heading">Recent projects</h6>
+                <p>Maybe it's to fulfill a dream & change the world.</p>
+            </div>
+            <div class="group latest">
+                <article class="one_third first group_pho"> 
+                    <img src="./imgs/MasCN_Logo-32bit-website.bmp" alt="" class="radius">
+                    <div class="txtwrap">
+                        <h6 class="heading">MasCN_kernel</h6>
+                        <time class="font-xs block btmspace-10" datetime="2022-08-21">Sunday, 21<sup>th</sup> Angust 2022</time>
+                        <p>There's a new open source & free operating system kernel, and there are many rich branch programs &hellip;</p>
+                        <footer><a href="./MasCN/pages/MasCN-home.html" class="text_transcolour">Read More &raquo;</a></footer>
                     </div>
-                    <div class="footer-sign-box">
-                        <svg width="450" height="300" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <title>oringes.cn</title>
-                                <g stroke="null">
-                                    <g stroke="null">
-                                        <title stroke="null" _mstHash="102401">oringes.cn</title>
-                                        <text stroke="#000" fill="#ffffff" stroke-width="0" x="227.30776" y="152.82686" id="svg_3" font-size="24" font-family="'JetBrains Mono'" text-anchor="start" xml:space="preserve" transform="matrix(2.4121 0 0 2.93824 -452.367 -276.992)">oringes.cn</text>
-                                        <path stroke="#000" fill="#ffffff" stroke-width="0" d="m7.10938,192.98135l0,-76.47621l76.47618,76.47621l-76.47618,0z" id="svg_2"/>
-                                        <path stroke="#000" fill="#e5e5e5" stroke-width="0" d="m96.00122,133.82437l-35.08803,35.08803l0,-70.17605l35.08803,35.08803z" id="svg_1"/>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
+                </article>
+                <article class="one_third group_pho"> 
+                    <img src="./imgs/MasLang&MasWeb_Logo-32bit-website.bmp" alt="" class="radius">
+                    <div class="txtwrap">
+                        <h6 class="heading">MasCN_language & MasCN_web</h6>
+                        <time class="font-xs block btmspace-10" datetime="2022-11-01">Tuesday, 01<sup>th</sup> November 2022</time>
+                        <p>It is not only a "lightweight markup language" for better expression style, but also a branch of MasCN &hellip;</p>
+                        <footer><a href="./MasCN/MasLang/pages/MasLang-home.html" class="text_transcolour">Read More &raquo;</a></footer>
                     </div>
+                </article>
+                <article class="one_third group_pho"> 
+                    <img src="./imgs/WordsGo_Logo-32bit-website.bmp" alt="" class="radius">
+                    <div class="txtwrap">
+                        <h6 class="heading">WordsGo - byOringes</h6>
+                        <time class="font-xs block btmspace-10" datetime="2022-10-09">Sunday, 9<sup>th</sup> October 2022</time>
+                        <p>Simple word games run on the console, like actions to manipulate words &hellip;</p>
+                        <footer><a href="./WordsGo/pages/WordsGo-home.html" class="text_transcolour">Read More &raquo;</a></footer>
+                    </div>
+                </article>
+            </div>
+            <div class="clear"></div>
+            </section>
+        </div>
+        <!-- ################################################################################################ -->
+        <div class="wrapper row4">
+            <footer id="footer" class="hoc clear"> 
+                <div class="one_third first">
+                    <h6 class="heading">Contact and message us</h6>
+                    <ul class="nospace btmspace-30 linklist contact">
+                        <li><i class="fa fa-map-marker"></i>
+                            <address>
+                            Street Name &amp; Number, Town, Postcode/Zip
+                            </address>
+                        </li>
+                        <li><i class="fa fa-phone"></i> +86 (183) 9637 4353</li>
+                        <li><i class="fa fa-envelope-o"></i> x92352314@163.com</li>
+                    </ul>
+                    <ul class="faico clear">
+                        <li><a class="faicon-facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="faicon-twitter" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="faicon-github" href="https://github.com/Oringes9235/"><i class="fa fa-github"></i></a></li>
+                        <li><a class="faicon-git" href="https://oringes.cn/git&codes/"><i class="fa fa-code-fork"></i></a></li>
+                        <li><a class="faicon-cny" href="https://oringes.cn/sponsorship/"><i class="fa fa-cny"></i></a></li>
+                        <li><a class="faicon-address-book" href="https://oringes.cn/developers/"><i class="fa fa-address-book"></i></a></li>
+                    </ul>
                 </div>
-                <div class="copyright-and-record-number-and-links-bottom">
-                    <div class="links-footer-box">
-                        <!--跳转连接框-->
-                    </div>
-                    <div class="copyright-and-record-number-box">
-                        <div class="copyright-of-footer">
-                            <p class="copyright-text">Copyright © 2022 Xue Fengpeng. All rights reserved.</p>
-                        </div>
-                        <div class="record-number-of-footer">
-                            <!--备案信息框-->
-                            <p class="number-text">闽ICP备...号</p>
-                        </div>
-                    </div>
+                <div class="one_third">
+                    <h6 class="heading">Code to be updated</h6>
+                    <ul class="nospace linklist">
+                    <li>
+                        <article>
+                            <h2 class="nospace font-x1"><a href="#">The oringes pages will be developed by January 1, 2023</a></h2>
+                            <time class="font-xs block btmspace-10" datetime="2022-11-10">Thursday, 10<sup>th</sup> November 2022</time>
+                            <p class="nospace">At that point you can create your oringes account &hellip;</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h2 class="nospace font-x1"><a href="#">Plan to have pages with special colors on special holidays</a></h2>
+                            <time class="font-xs block btmspace-10" datetime="2022-11-15">Thursday, 10<sup>th</sup> November 2022</time>
+                            <p class="nospace">Stay tuned &hellip;</p>
+                        </article>
+                    </li>
+                    </ul>
                 </div>
+                <div class="one_third">
+                    <h6 class="heading">Welcome to our team!</h6>
+                    <p class="nospace btmspace-30">You can fill in your information in the box below after submissions. Once the submission is approved, you will receive an email from Oringes</p>
+                    <form method="post" action="#">
+                    <fieldset>
+                        <legend>Newsletter:</legend>
+                        <input class="btmspace-15" type="text" value="" placeholder="Name">
+                        <input class="btmspace-15" type="text" value="" placeholder="Email">
+                        <button type="submit" value="submit" class="btn_active">Submit</button>
+                    </fieldset>
+                    </form>
+                </div>
+            </footer>
+        </div>
+
+        <!-- ################################################################################################ -->
+        <div class="wrapper row5">
+            <div id="copyright" class="hoc clear"> 
+                <p class="fl_left">Copyright &copy; 2022 - All Rights Reserved - <a href="#">oringes.cn & developers</a></p>
+                <p class="fl_right">闽ICP备案2022.....号-1</p>
             </div>
         </div>
+
+        <a id="backtotop" href="#top" class="visible"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JAVASCRIPTS -->
+        <script src="./library/scripts/jquery.backtotop.js"></script>
+        <script src="./library/scripts/jquery.backtotop.js"></script>
+        <script src="./library/scripts/jquery.mobilemenu.js"></script>
+        <script src="./library/scripts/javascript.translate.js"></script>
+
+        <!--Part of the code comes from "mobanwang.com"-->
     </body>
 </html>
