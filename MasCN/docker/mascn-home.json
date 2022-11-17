@@ -8,6 +8,7 @@
     "Development ingestion":{
         "系统的引导部分是基于UEFI及其接口进行开发的。如MasCNBootPkg部分的全部代码都是基于UEFI开发得来。" : "The boot part of the system is developed based on UEFI and its interfaces. For example, all the code in the MasCNBootPkg section is based on UEFI.",
         "具体的UEFI开发使用说明可以查看Docs页面的内容或是前往UEFI的官网查询。" : "For specific UEFI development instructions, you can check the content of the Docs page or go to the official website of UEFI.",
-        "在实际的代码中开发中，使用到UEFI的源代码是edk2项目中的，引导程序的编译也是在edk2下提供的编译工具下完成的。" : "In the actual code development, the source code used in UEFI is in the edk2 project, and the bootstrapper is compiled under the compilation tools provided under edk2."
+        "在实际的代码中开发中，使用到UEFI的源代码是edk2项目中的，引导程序的编译也是在edk2下提供的编译工具下完成的。" : "In the actual code development, the source code used in UEFI is in the edk2 project, and the bootstrapper is compiled under the compilation tools provided under edk2.",
+        "启动系统时，在启动动画后面的操作就开始跳出UEFI，进入内核。" : "When you start the system, the action after the boot animation starts to jump out of UEFI and into the kernel."
     }
 }
