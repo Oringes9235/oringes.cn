@@ -12,12 +12,12 @@
         <div class="wrapper row1">
             <header id="header" class="hoc clear"> 
                 <div id="logo" class="fl_left">
-                    <h1><a href="index.html">Oringes.cn</a></h1>
+                    <h1><a href="https://www.oringes.cn">Oringes.cn</a></h1>
                 </div>
                 <nav id="mainav" class="fl_right">
                     <ul class="clear">
                         <li class="active">
-                            <a href="index.html" set-lan="html:home">Home</a>
+                            <a href="https://www.oringes.cn" set-lan="html:home">Home</a>
                         </li>
                         <li>
                             <a class="drop" href="#" set-lan="html:mascn">MasCN</a>
@@ -33,13 +33,13 @@
                         <li>
                             <a class="drop" href="#">Projects</a>
                             <ul>
-                                <li><a href="./branch/pages/MasLang-home.html">MasLang & MasWeb</a></li>
+                                <li><a href="https://www.oringes.cn/MasCN/MasLang/pages/">MasLang & MasWeb</a></li>
                                 <li>
                                     <a class="drop" href="#">WordsGo</a>
                                     <ul>
-                                        <li><a href="./WordsGo/pages/WordsGo-home.html">WordsGo</a></li>
-                                        <li><a href="./WordsGo/pages/WordsGo-docs.html">Docs</a></li>
-                                        <li><a href="./WordsGo/pages/WordsGo-source-codes.html">Source Codes</a></li>
+                                        <li><a href="https://www.oringes.cn/WordsGo/pages/">WordsGo</a></li>
+                                        <li><a href="https://www.oringes.cn/WordsGo/pages/">Docs</a></li>
+                                        <li><a href="https://www.oringes.cn/WordsGo/pages/">Source Codes</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -47,35 +47,50 @@
                         <li>
                             <a class="drop" href="#">Sources</a>
                             <ul>
-                                <li><a href="./Sources/Musics/Musics-home.html">Musics</a></li>
-                                <li><a href="./Sources/Movies/Movies-home.html">Movies</a></li>
+                                <li><a href="https://www.oringes.cn/Sources/Musics/Musics-home.html">Musics</a></li>
+                                <li><a href="https://www.oringes.cn/Sources/Movies/Movies-home.html">Movies</a></li>
                             </ul>
                         </li>
                         <li><a href="./Special/pages/Special-home.html">Special</a></li>
                     </ul>
                     <!--mobile phone-->
                     <form action="#">
-                        <select name="" id="">
+                        <select name="select" id="select" onchange="s_click(this)">
                             <option selected="selected" value="">Menu</option>
-                            <option value="./index.html">Home</option>
+                            <option value="https://www.oringes.cn">Home</option>
 
-                            <option value="./MasCN/pages/MasCN-home.html">MasCN</option>
-                            <option value="./MasCN/pages/MasCN-docs.html">- - Docs</option>
-                            <option value="./MasCN/pages/MasCN-source-codes.html">- - Source Codes</option>
-                            <option value="./MasCN/pages/MasCN-version.html">- - Version</option>
-                            <option value="./MasCN/pages/MasCN-develop.html">- - Develop</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/">MasCN</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/docs/">- - Docs</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/source-codes/">- - Source Codes</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/version/">- - Version</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/develop/">- - Develop</option>
 
-                            <option value="./MasCN/MasLang/pages/MasLang-home.html">MasLang & MasWeb</option>
-                            <option value="./WordsGo/pages/WordsGo-home.html">WordsGo</option>
-                            <option value="./WordsGo/pages/WordsGo-docs.html">- - Docs</option>
-                            <option value="./WordsGo/pages/WordsGo-source-codes.html">- - Source Codes</option>
+                            <option value="https://www.oringes.cn/MasCN/MasLang/pages/">MasLang & MasWeb</option>
+                            <option value="https://www.oringes.cn/WordsGo/pages/">WordsGo</option>
+                            <option value="https://www.oringes.cn/WordsGo/pages/docs/">- - Docs</option>
+                            <option value="https://www.oringes.cn/WordsGo/pages/source-codes/">- - Source Codes</option>
 
-                            <option value="./Sources/Musics/Musics-home.html">Musics</option>
-                            <option value="./Sources/Movies/Movies-home.html">Movies</option>
+                            <option value="https://www.oringes.cn/Sources/pages/Books/">Books</option>
+                            <option value="https://www.oringes.cn/Sources/pages/Videos/">Videos</option>
 
-                            <option value="./Special/pages/Special-home.html">Special</option>
+                            <option value="https://www.oringes.cn/Special/pages/Special/">Special</option>
                         </select>
                     </form>
+                    <script type="text/javascript">
+                        //select跳页
+                        function s_click(obj) {
+                            var num = 0;
+                            for (var i = 0; i < obj.options.length; i++) {
+                                if (obj.options[i].selected == true) {
+                                    num++;
+                                }
+                            }
+                            if (num == 1) {
+                                var url = obj.options[obj.selectedIndex].value;
+                                window.open(url); //这里修改打开连接方式
+                            }
+                        }
+                    </script>
                 </nav>
             </header>
         </div>
@@ -319,13 +334,21 @@
 
         <!-- ################################################################################################ -->
         <div class="wrapper row5">
-            <div id="copyright" class="hoc clear"> 
+            <div id="copyright" class="hoc clear">
                 <p class="fl_left">Copyright &copy; 2022 - All Rights Reserved - <a href="#">oringes.cn & developers</a></p>
-                <p class="fl_right">闽ICP备案2022.....号-1</p>
-            </div>
+                <p class="fl_right">
+                    <a href="http://www.beian.gov.cn">闽ICP备2022016672号</a>
+            </p>
+            <p class="fl_right">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35082302000216" style="margin-right: 20px;">
+                    <img src="https://oringes.cn/imgs/icon/police.png" style="float:left;"/>
+                    闽公网安备 35082302000216号
+                </a>
+            </p>
         </div>
+    </div>
 
-        <a id="backtotop" href="#top" class="visible"><i class="fa fa-chevron-up"></i></a>
+    <a id="backtotop" href="#top" class="visible"><i class="fa fa-chevron-up"></i></a>
 
         <!-- JAVASCRIPTS -->
         <script src="./library/scripts/jquery.backtotop.js"></script>
