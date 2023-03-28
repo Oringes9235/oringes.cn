@@ -12,7 +12,7 @@ function initVars(){
 	seedTimer=0;seedInterval=5,seedLife=100;gravity=.02;
 	seeds=new Array();
 	sparkPics=new Array();
-	s="./";
+	s="https://www.oringes.cn/firework/Homework_x/imgs/";
 	for(i=1;i<=10;++i){
 		sparkPic=new Image();
 		sparkPic.src=s+"spark"+i+".png";
