@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="https://www.oringes.cn/library/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="shortcut icon" href="https://www.oringes.cn/imgs/icon/oringes.cn-icon.svg">
+        <title>Oringes.cn | Home</title>
+    </head>
+    <body id="top">
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear"> 
+                <div id="logo" class="fl_left">
+                    <h1><a href="https://www.oringes.cn">Oringes.cn</a></h1>
+                </div>
+                <nav id="mainav" class="fl_right">
+                    <ul class="clear">
+                        <li class="active">
+                            <a href="https://www.oringes.cn" set-lan="html:home">Home</a>
+                        </li>
+                        <li>
+                            <a class="drop" href="#" set-lan="html:mascn">MasCN</a>
+                            <ul>
+                                <li><a href="https://www.oringes.cn/MasCN/pages">MasCN</a></li>
+                                <li><a href="https://www.oringes.cn/MasCN/pages/docs/">Docs</a></li>
+                                <li><a href="https://www.oringes.cn/MasCN/pages/source-codes/">Source Codes</a></li>
+                                <li><a href="https://www.oringes.cn/MasCN/pages/version/">Version</a></li>
+                                <li><a href="https://www.oringes.cn/MasCN/pages/develop/">Develop</a></li>
+                            </ul>
+                        </li>
+                        <!--------------------------------------------------------------->
+                        <li>
+                            <a class="drop" href="#">Projects</a>
+                            <ul>
+                                <li><a href="https://www.oringes.cn/MasCN/MasLang/pages/">MasLang & MasWeb</a></li>
+                                <li>
+                                    <a class="drop" href="#">WordsGo</a>
+                                    <ul>
+                                        <li><a href="https://www.oringes.cn/WordsGo/pages/">WordsGo</a></li>
+                                        <li><a href="https://www.oringes.cn/WordsGo/pages/">Docs</a></li>
+                                        <li><a href="https://www.oringes.cn/WordsGo/pages/">Source Codes</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="drop" href="#">Sources</a>
+                            <ul>
+                                <li><a href="https://www.oringes.cn/Sources/Books/pages/">Books</a></li>
+                                <li><a href="https://www.oringes.cn/Sources/Videos/pages/">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./Special/pages/Special-home.html">Special</a></li>
+                    </ul>
+                    <!--mobile phone-->
+                    <form action="#">
+                        <select name="select" id="select" onchange="s_click(this)">
+                            <option selected="selected" value="">Menu</option>
+                            <option value="https://www.oringes.cn">Home</option>
+
+                            <option value="https://www.oringes.cn/MasCN/pages/">MasCN</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/docs/">- - Docs</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/source-codes/">- - Source Codes</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/version/">- - Version</option>
+                            <option value="https://www.oringes.cn/MasCN/pages/develop/">- - Develop</option>
+
+                            <option value="https://www.oringes.cn/MasCN/MasLang/pages/">MasLang & MasWeb</option>
+                            <option value="https://www.oringes.cn/WordsGo/pages/">WordsGo</option>
+                            <option value="https://www.oringes.cn/WordsGo/pages/docs/">- - Docs</option>
+                            <option value="https://www.oringes.cn/WordsGo/pages/source-codes/">- - Source Codes</option>
+
+                            <option value="https://www.oringes.cn/Sources/Books/pages/">Books</option>
+                            <option value="https://www.oringes.cn/Sources/Videos/pages/">Videos</option>
+
+                            <option value="https://www.oringes.cn/Special/pages/">Special</option>
+                        </select>
+                    </form>
+                    <script type="text/javascript">
+                        //select跳页
+                        function s_click(obj) {
+                            var num = 0;
+                            for (var i = 0; i < obj.options.length; i++) {
+                                if (obj.options[i].selected == true) {
+                                    num++;
+                                }
+                            }
+                            if (num == 1) {
+                                var url = obj.options[obj.selectedIndex].value;
+                                window.open(url); //这里修改打开连接方式
+                            }
+                        }
+                    </script>
+                </nav>
+            </header>
+        </div>
+
+        <!-- ################################################################################################ -->
+        <div class="wrapper row2">
+            <div id="breadcrumb" class="hoc clear"> 
+                <ul>
+                    <li><a href="#">Oringes.cn</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ################################################################################################ -->
+        <div class="wrapper row3">
+            <main class="hoc container clear"> 
+                <!-- main body -->
+                <div class="content three_quarter first"> 
+                    <h1>|| Bookcase</h1>
+
+                    <h2>Renaissance Literature / 文艺复兴时期作品</h2>
+                    
+                    <p> </p>
+
+                    <h2>Early Modern Era / 近现代</h2>
+
+                    <p id="Eugenie-Grandet">[1]<strong><i>Eugenie Grandet</i></strong>, is a novel by the French critical realist novelist <strong><a>Honoré de Balzac</a></strong>.</p>
+                    <p>Enter to the <a target="_blank" href="../Bookcase/EME/Eugenie-Grandet/page_1.html" title="Eugenie Grandet - Honoré de Balzac"><i>Eugenie Grandet</i></a>_</p>
+                    
+                    
+                    <!--
+                        <a target="_blank" href="#" title="">links</a>
+                        <a href="#" title=""></a>
+                        <a title=""></a>
+                    -->
+                    
+
+                    <div id="comments">
+                        <h2>To Talks / 论</h2>
+                        <ul>
+                            <li>
+                                <article>
+                                    <header>
+                                        <figure class="avatar"><img src="https://www.oringes.cn/imgs/user/user-hand.png" alt=""></figure>
+                                        <address>
+                                            By <a href="#">Oringes</a>
+                                        </address>
+                                        <time datetime="2022-07-21T15:15+00:00">UTC+8 Thursday, 21<sup>th</sup> July 2022 on 15:15:00PM</time>
+                                    </header>
+                                    <div class="comcont">
+                                        <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <header>
+                                        <figure class="avatar"><img src="https://www.oringes.cn/imgs/user/user-hand.png" alt=""></figure>
+                                        <address>
+                                            By <a href="#">Francis Edward</a>
+                                        </address>
+                                        <time datetime="2022-07-25T18:52+00:00">UTC-8 Monday, 25<sup>th</sup> July 2022 on 18:25:00PM</time>
+                                    </header>
+                                    <div class="comcont">
+                                        <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ################################################################################################ -->
+                <div class="sidebar one_quarter"> 
+                    <h6>Navigation bar</h6>
+                    <nav class="sdb_holder">
+                        <ul>
+                            <li>
+                                <a href="#">Early Modern Era / 近现代</a>
+                                <ul>
+                                    <li><a href="../Bookcase/EME/Eugenie-Grandet/page_1.html"><i>Eugenie Grandet</i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Branch</a>
+                                <ul>
+                                    <li><a href="#">M</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--
+                    <nav class="sdb_holder">
+                        <ul>
+                            <li><a href="#">Navigation - Level 1</a></li>
+                            <li>
+                                <a href="#">Navigation - Level 1</a>
+                                <ul>
+                                    <li><a href="#">Navigation - Level 2</a></li>
+                                    <li><a href="#">Navigation - Level 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Navigation - Level 1</a>
+                                <ul>
+                                    <li><a href="#">Navigation - Level 2</a></li>
+                                    <li>
+                                        <a href="#">Navigation - Level 2</a>
+                                        <ul>
+                                            <li><a href="#">Navigation - Level 3</a></li>
+                                            <li><a href="#">Navigation - Level 3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Navigation - Level 1</a></li>
+                        </ul>
+                    </nav>
+                    -->
+                    <div class="sdb_holder">
+                        <article>
+                            <h6>Lorem ipsum dolor</h6>
+                            <p>Nuncsed sed conseque a at quismodo tris mauristibus sed habiturpiscinia sed.</p>
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit</a></li>
+                                <li>Etiam vel sapien et</li>
+                                <li><a href="#">Etiam vel sapien et</a></li>
+                            </ul>
+                            <p>Nuncsed sed conseque a at quismodo tris mauristibus sed habiturpiscinia sed. Condimentumsantincidunt dui mattis magna intesque purus orci augue lor nibh.</p>
+                            <p class="more"><a href="#">Continue Reading &raquo;</a></p>
+                        </article>
+                    </div>
+                </div>
+                <!-- / main body -->
+                <div class="clear"></div>
+            </main>
+        </div>
+
+
+
+    
+        <!-- ################################################################################################ -->
+        <div class="wrapper row4">
+            <footer id="footer" class="hoc clear"> 
+                <div class="one_third first">
+                    <h6 class="heading">Contact and message us</h6>
+                    <ul class="nospace btmspace-30 linklist contact">
+                        <li><i class="fa fa-map-marker"></i>
+                            <address>
+                            Street Name &amp; Number, Town, Postcode/Zip
+                            </address>
+                        </li>
+                        <li><i class="fa fa-phone"></i> +86 (183) 9637 4353</li>
+                        <li><i class="fa fa-envelope-o"></i> x92352314@163.com</li>
+                    </ul>
+                    <ul class="faico clear">
+                        <li><a class="faicon-facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="faicon-twitter" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="faicon-github" href="https://github.com/Oringes9235/"><i class="fa fa-github"></i></a></li>
+                        <li><a class="faicon-git" href="https://oringes.cn/git&codes/"><i class="fa fa-code-fork"></i></a></li>
+                        <li><a class="faicon-cny" href="https://oringes.cn/sponsorship/"><i class="fa fa-cny"></i></a></li>
+                        <li><a class="faicon-address-book" href="https://oringes.cn/developers/"><i class="fa fa-address-book"></i></a></li>
+                    </ul>
+                </div>
+                <div class="one_third">
+                    <h6 class="heading">Code to be updated</h6>
+                    <ul class="nospace linklist">
+                    <li>
+                        <article>
+                            <h2 class="nospace font-x1"><a href="#">The oringes pages will be developed by January 1, 2023</a></h2>
+                            <time class="font-xs block btmspace-10" datetime="2022-11-10">Thursday, 10<sup>th</sup> November 2022</time>
+                            <p class="nospace">At that point you can create your oringes account &hellip;</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h2 class="nospace font-x1"><a href="#">Plan to have pages with special colors on special holidays</a></h2>
+                            <time class="font-xs block btmspace-10" datetime="2022-11-15">Thursday, 10<sup>th</sup> November 2022</time>
+                            <p class="nospace">Stay tuned &hellip;</p>
+                        </article>
+                    </li>
+                    </ul>
+                </div>
+                <div class="one_third">
+                    <h6 class="heading">Welcome to our team!</h6>
+                    <p class="nospace btmspace-30">You can fill in your information in the box below after submissions. Once the submission is approved, you will receive an email from Oringes</p>
+                    <form method="post" action="#">
+                    <fieldset>
+                        <legend>Newsletter:</legend>
+                        <input class="btmspace-15" type="text" value="" placeholder="Name">
+                        <input class="btmspace-15" type="text" value="" placeholder="Email">
+                        <button type="submit" value="submit" class="btn_active">Submit</button>
+                    </fieldset>
+                    </form>
+                </div>
+            </footer>
+        </div>
+
+        <!-- ################################################################################################ -->
+        <div class="wrapper row5">
+            <div id="copyright" class="hoc clear">
+                <p class="fl_left">Copyright &copy; 2022 - All Rights Reserved - <a href="#">oringes.cn & developers</a></p>
+                <p class="fl_right">
+                    <a href="http://www.beian.gov.cn">闽ICP备2022016672号</a>
+            </p>
+            <p class="fl_right">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35082302000216" style="margin-right: 20px;">
+                    <img src="https://oringes.cn/imgs/icon/police.png" style="float:left;"/>
+                    闽公网安备 35082302000216号
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <a id="backtotop" href="#top" class="visible"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JAVASCRIPTS -->
+        <script src="./library/scripts/jquery.backtotop.js"></script>
+        <script src="./library/scripts/jquery.backtotop.js"></script>
+        <script src="./library/scripts/jquery.mobilemenu.js"></script>
+        <script src="./library/scripts/javascript.translate.js"></script>
+    </body>
+</html>
