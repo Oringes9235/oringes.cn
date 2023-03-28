@@ -19,10 +19,10 @@ function initVars(){
 		sparkPics.push(sparkPic);
 	}
 	sparks=new Array();
-	pow1=new Audio(s+"pow1.ogg");
-	pow2=new Audio(s+"pow2.ogg");
-	pow3=new Audio(s+"pow3.ogg");
-	pow4=new Audio(s+"pow4.ogg");
+	pow1=new Audio(s+"audio/pow1.ogg");
+	pow2=new Audio(s+"audio/pow2.ogg");
+	pow3=new Audio(s+"audio/pow3.ogg");
+	pow4=new Audio(s+"audio/pow4.ogg");
 	frames = 0;
 }
 
